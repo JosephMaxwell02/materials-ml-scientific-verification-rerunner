@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this rerunner, cite both this software record and the related research compendium."
+title: "Materials ML Failure Analysis — Publication-Specific Scientific Verification Rerunner"
+type: software
+version: 1.0.0
+doi: "10.5281/zenodo.21939447"
+authors:
+  - family-names: Maxwell
+    given-names: Joseph
+    orcid: "https://orcid.org/0009-0002-4070-6035"
+    affiliation: "The Systemica Institute, London, United Kingdom"
+date-released: 2026-08-14
+license: LicenseRef-Scientific-Verification-1.0
+references:
+  - type: dataset
+    title: "Materials ML Failure Analysis - Public Research Compendium v1.0.0"
+    doi: "10.5281/zenodo.21919563"

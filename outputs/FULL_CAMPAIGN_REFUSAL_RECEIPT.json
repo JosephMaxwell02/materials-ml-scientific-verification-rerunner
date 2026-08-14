@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-08-14T20:55:08.220311+00:00",
+  "decision": "REFUSED",
+  "environment": {
+    "packages": {
+      "matbench": "0.6",
+      "matminer": "0.10.1",
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "pymatgen": "2026.5.4",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "threads": 1
+  },
+  "missing": "all frozen third-party inputs, complete campaign plans and full expected-output contracts",
+  "mode": "full",
+  "reason": "FULL_PUBLICATION_CAMPAIGN_NOT_BOUND",
+  "route": "spatial-gil",
+  "schema": "materials_ml_failure_analysis.rerunner_receipt.v1"
+}

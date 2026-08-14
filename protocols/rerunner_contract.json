@@ -1,0 +1,25 @@
+{
+  "schema": "materials_ml_failure_analysis.scientific_verification_rerunner.v1",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.21939447",
+  "compendium_doi": "10.5281/zenodo.21919563",
+  "modes": {
+    "smoke": "deterministic synthetic mechanism test; not a published-claim rerun",
+    "compute": "bounded real-data fitting route that does not load frozen expected outputs",
+    "verify": "separate comparison of a computed receipt with frozen expected evidence",
+    "full": "structured refusal because the complete publication campaigns are not publicly bound"
+  },
+  "routes": {
+    "matbench-importance": "supports Paper 1",
+    "mp-viability": "supports Paper 2",
+    "spatial-gil": "supports the wider compendium and monograph; not Paper 3"
+  },
+  "threads": 1,
+  "seeds": {
+    "matbench-importance": 11,
+    "mp-viability": 23,
+    "spatial-gil": 20260809
+  },
+  "scientific_tolerance": 1e-10,
+  "claim_ceiling": "representative publication-specific computational verification only; no full campaign reproduction, external replication or engineering authority"
+}

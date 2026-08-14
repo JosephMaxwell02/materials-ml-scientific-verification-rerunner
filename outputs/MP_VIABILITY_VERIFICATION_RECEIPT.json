@@ -1,0 +1,33 @@
+{
+  "comparison": {
+    "numeric_deltas": {
+      "baseline_mae": 0.0,
+      "baseline_r2": 0.0,
+      "r2_minus_null": 0.0,
+      "target_permutation_r2_mean": 0.0
+    },
+    "pass": true,
+    "row_count_match": true,
+    "tolerance": 1e-10
+  },
+  "computed_receipt": "MP_VIABILITY_COMPUTED_RECEIPT.json",
+  "created_utc": "2026-08-14T20:55:49.205853+00:00",
+  "decision": "PASS",
+  "environment": {
+    "packages": {
+      "matbench": "0.6",
+      "matminer": "0.10.1",
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "pymatgen": "2026.5.4",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "threads": 1
+  },
+  "mode": "verify",
+  "route": "mp-viability",
+  "schema": "materials_ml_failure_analysis.rerunner_receipt.v1"
+}

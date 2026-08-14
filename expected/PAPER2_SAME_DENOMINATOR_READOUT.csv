@@ -1,0 +1,4 @@
+criterion,passed,eligible,fraction
+paired_null_separation_positive,211,288,0.7326388888888888
+absolute_r2_positive,13,288,0.04513888888888889
+both_conditions,13,288,0.04513888888888889

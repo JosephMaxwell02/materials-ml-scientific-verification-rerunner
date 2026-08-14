@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-08-14T21:00:18.444540+00:00",
+  "decision": "COMPUTED_NOT_YET_VERIFIED",
+  "environment": {
+    "packages": {
+      "matbench": "0.6",
+      "matminer": "0.10.1",
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "pymatgen": "2026.5.4",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "threads": 1
+  },
+  "mode": "compute",
+  "result": {
+    "baseline": {
+      "mae": 0.4177198492645902,
+      "r2": 0.8107685418778164
+    },
+    "cache_identity": {
+      "feature_names_sha256": "5ca1726776bae9a22011a2d0127e6b02defea973f638996d371256e09562232a",
+      "feature_sha256": "6cdf69d17d086b14b7a4a54637bc731ba2fdc26f2c8a136956e9b3fd649db8b2"
+    },
+    "classification": "BOUNDED_EXACT_MATBENCH_FITTING_PROBE",
+    "feature_index_removed": 0,
+    "feature_removed": "MagpieData minimum Number",
+    "fold": 0,
+    "removal": {
+      "mae": 0.4363553240969709,
+      "r2": 0.8015389126757937
+    },
+    "retrained_removal_mae_increase": 0.018635474832380705,
+    "route": "matbench-importance",
+    "task": "matbench_mp_gap",
+    "test_rows": 21223,
+    "train_rows": 84890
+  },
+  "schema": "materials_ml_failure_analysis.rerunner_receipt.v1"
+}

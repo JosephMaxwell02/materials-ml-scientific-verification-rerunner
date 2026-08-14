@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-08-14T20:55:40.944476+00:00",
+  "decision": "COMPUTED_NOT_YET_VERIFIED",
+  "environment": {
+    "packages": {
+      "matbench": "0.6",
+      "matminer": "0.10.1",
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "pymatgen": "2026.5.4",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "threads": 1
+  },
+  "mode": "compute",
+  "result": {
+    "classification": "BOUNDED_REAL_JARVIS_FITTING_PROBE",
+    "configuration": "C",
+    "folds": [
+      {
+        "mae": 35.48447338217425,
+        "r2": 0.35099943185109206,
+        "rmse": 49.44802085782891,
+        "valid_minus_null_r2": 0.35103114659072565
+      },
+      {
+        "mae": 29.270047919090764,
+        "r2": 0.5221549695423098,
+        "rmse": 41.63912291712531,
+        "valid_minus_null_r2": 0.7235000242708198
+      },
+      {
+        "mae": 34.47266689739499,
+        "r2": 0.4764300792749576,
+        "rmse": 46.533505516351774,
+        "valid_minus_null_r2": 0.41805127085333393
+      },
+      {
+        "mae": 35.498780111886454,
+        "r2": 0.5884037018038151,
+        "rmse": 46.222789590672214,
+        "valid_minus_null_r2": 0.5435242800134235
+      }
+    ],
+    "input": {
+      "bytes": 40811489,
+      "filename": "jdft_3d-12-12-2022.json.zip",
+      "sha256": "d4c64660e9e1fa45c82bd8868a96ec10162195eed69636445972c05550d8d0d6"
+    },
+    "mean_valid_mae": 33.68149207763661,
+    "mean_valid_minus_null_r2": 0.5090266804320758,
+    "mean_valid_r2": 0.48449704561804363,
+    "mean_valid_rmse": 45.960859720494554,
+    "positive_null_gap_folds": 4,
+    "route": "spatial-gil",
+    "sd_valid_r2": 0.10016885953469537,
+    "split_view": "jid_order_contiguous_4fold",
+    "target": "bulk_modulus_kv"
+  },
+  "schema": "materials_ml_failure_analysis.rerunner_receipt.v1"
+}

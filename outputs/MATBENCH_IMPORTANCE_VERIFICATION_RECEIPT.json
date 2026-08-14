@@ -1,0 +1,36 @@
+{
+  "comparison": {
+    "identity_matches": {
+      "feature_names_sha256": true,
+      "feature_sha256": true
+    },
+    "observed_reference_difference": {
+      "baseline_mae": 0.0,
+      "baseline_r2": 0.0,
+      "removal_mae": 0.0,
+      "removal_r2": 0.0
+    },
+    "pass": true,
+    "tolerance": 1e-10
+  },
+  "computed_receipt": "MATBENCH_IMPORTANCE_COMPUTED_RECEIPT.json",
+  "created_utc": "2026-08-14T21:01:12.434499+00:00",
+  "decision": "PASS",
+  "environment": {
+    "packages": {
+      "matbench": "0.6",
+      "matminer": "0.10.1",
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "pymatgen": "2026.5.4",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "threads": 1
+  },
+  "mode": "verify",
+  "route": "matbench-importance",
+  "schema": "materials_ml_failure_analysis.rerunner_receipt.v1"
+}

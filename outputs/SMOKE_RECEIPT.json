@@ -1,0 +1,100 @@
+{
+  "created_utc": "2026-08-14T20:55:10.364408+00:00",
+  "decision": "PASS",
+  "environment": {
+    "packages": {
+      "matbench": "0.6",
+      "matminer": "0.10.1",
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "pymatgen": "2026.5.4",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "threads": 1
+  },
+  "mode": "smoke",
+  "results": [
+    {
+      "baseline": {
+        "mae": 16.675501753389973,
+        "r2": 0.9800208874530834
+      },
+      "classification": "SYNTHETIC_MECHANISM_SMOKE_NOT_PUBLISHED_CLAIM",
+      "feature_names_probed": [
+        "f0",
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "features_probed": 6,
+      "features_total": 20,
+      "permutation_mae_increase": [
+        0.045820918534062116,
+        -0.06106545428293941,
+        -0.6298447024514253,
+        -0.5337944076992649,
+        -0.39000566590938845,
+        -0.3948047439656506
+      ],
+      "retrained_removal_mae_increase": [
+        -0.7488045406121291,
+        -0.39917251123515385,
+        -0.3655182590859205,
+        0.0623435383664841,
+        0.3318451246263976,
+        -1.404087636591587
+      ],
+      "route": "matbench-importance",
+      "spearman_permutation_vs_retrained_removal": -0.3142857142857143
+    },
+    {
+      "baseline_r2": 0.6981838455823445,
+      "both_gates": true,
+      "classification": "SYNTHETIC_TWO_GATE_SMOKE_NOT_PUBLISHED_CLAIM",
+      "null_repetitions": 8,
+      "positive_absolute_r2": true,
+      "positive_non_null_signal": true,
+      "r2_minus_null": 0.7232126391848593,
+      "route": "mp-viability",
+      "target_permutation_r2_mean": -0.025028793602514865
+    },
+    {
+      "classification": "SYNTHETIC_SPATIAL_MECHANISM_SMOKE_NOT_PUBLISHED_CLAIM",
+      "folds": [
+        {
+          "mae": 18.842288285868516,
+          "r2": 0.9677005073666088,
+          "rmse": 23.308017348355943,
+          "valid_minus_null_r2": 1.4930701089222338
+        },
+        {
+          "mae": 16.371570176956933,
+          "r2": 0.9780065729753473,
+          "rmse": 19.451923082218347,
+          "valid_minus_null_r2": 1.269045806859402
+        },
+        {
+          "mae": 16.820716779912022,
+          "r2": 0.978928522516966,
+          "rmse": 21.52349194458168,
+          "valid_minus_null_r2": 1.2237785295819896
+        },
+        {
+          "mae": 14.633656278253072,
+          "r2": 0.9841632748423246,
+          "rmse": 19.51670337756414,
+          "valid_minus_null_r2": 1.151351918996729
+        }
+      ],
+      "mean_valid_minus_null_r2": 1.2843115910900886,
+      "mean_valid_r2": 0.9771997194253117,
+      "route": "spatial-gil"
+    }
+  ],
+  "schema": "materials_ml_failure_analysis.rerunner_receipt.v1"
+}

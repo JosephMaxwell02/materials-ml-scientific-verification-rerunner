@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-08-14T20:55:24.337066+00:00",
+  "decision": "COMPUTED_NOT_YET_VERIFIED",
+  "environment": {
+    "packages": {
+      "matbench": "0.6",
+      "matminer": "0.10.1",
+      "numpy": "2.4.4",
+      "pandas": "3.0.2",
+      "pymatgen": "2026.5.4",
+      "scikit-learn": "1.8.0",
+      "scipy": "1.17.1"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "threads": 1
+  },
+  "mode": "compute",
+  "result": {
+    "baseline_mae": 82139299.88790873,
+    "baseline_r2": -0.0836707859908159,
+    "classification": "BOUNDED_REAL_MATERIALS_PROJECT_FITTING_PROBE",
+    "cohort": "within_source_common",
+    "input": {
+      "bytes": 71157015,
+      "filename": "materials_project_snapshot.csv",
+      "sha256": "e02083989c5f0dc029408eaf4b8634fe5557241a06e8e3ebd10c27693fa26b62"
+    },
+    "lane": "causal_common",
+    "model": "ridge",
+    "null_repetitions": 30,
+    "r2_minus_null": 0.7779808590836915,
+    "route": "mp-viability",
+    "rows": 13021,
+    "seed": 11,
+    "split_view": "row_random",
+    "target": "bulk_modulus",
+    "target_permutation_r2_mean": -0.8616516450745074
+  },
+  "schema": "materials_ml_failure_analysis.rerunner_receipt.v1"
+}
