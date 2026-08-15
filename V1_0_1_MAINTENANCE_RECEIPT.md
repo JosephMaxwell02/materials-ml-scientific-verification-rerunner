@@ -13,6 +13,8 @@
 - Regenerated `MANIFEST.sha256` for the canonical v1.0.1 Git tree.
 - Added clean-checkout manifest verification, automated tests and the existing deterministic
   mechanism smoke check to CI.
+- Added a narrow installer that preserves the frozen top-level package versions while
+  bypassing the historical `matbench==0.6` / `matminer` metadata conflict.
 - Added a short quick-verification path to `README.md`.
 - Added exact instructions for correcting creator ORCID and affiliation on the existing
   Zenodo record without creating a new file version.
@@ -22,7 +24,7 @@ scientific values, verification outputs or the integrity of the sealed v1.0.0 ZI
 
 ## Verification
 
-- Canonical Git-tree manifest: `39` files, PASS.
+- Canonical Git-tree manifest: `40` files, PASS.
 - Automated unit suite: `4 passed`.
 - Deterministic mechanism smoke check: PASS.
 - Frozen expected outputs, receipts, protocols and scientific code changed: `0`.
