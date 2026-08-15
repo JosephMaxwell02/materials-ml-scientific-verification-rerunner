@@ -17,16 +17,36 @@ def main() -> None:
         for line in REQUIREMENTS.read_text(encoding="utf-8").splitlines()
         if line.strip() and not line.lstrip().startswith("#")
     ]
-    matbench = [spec for spec in specifications if spec.lower().startswith("matbench==")]
-    compatible = [spec for spec in specifications if spec not in matbench]
-    if len(matbench) != 1:
-        raise SystemExit("Expected exactly one pinned matbench specification")
+    metadata_conflicts = [
+        spec
+        for spec in specifications
+        if spec.lower().startswith(("matbench==", "matminer=="))
+    ]
+    compatible = [spec for spec in specifications if spec not in metadata_conflicts]
+    if len(metadata_conflicts) != 2:
+        raise SystemExit("Expected pinned matbench and matminer specifications")
 
-    subprocess.check_call([sys.executable, "-m", "pip", "install", *compatible])
-    # matbench 0.6 metadata pins an older matminer than the frozen, receipted
-    # environment. Install its package without replacing the declared matminer.
     subprocess.check_call(
-        [sys.executable, "-m", "pip", "install", "--no-deps", matbench[0]]
+        [
+            sys.executable,
+            "-m",
+            "pip",
+            "install",
+            *compatible,
+            "monty",
+            "pymongo",
+            "requests",
+            "sympy",
+            "tqdm",
+        ]
+    )
+    # The published environment intentionally preserves pandas 3.0.2 with
+    # matminer 0.10.1, while matminer metadata requests pandas<3. Matbench 0.6
+    # also pins matminer 0.7.4. Install both packages without replacing the
+    # receipted top-level versions; their runtime dependencies were installed
+    # above.
+    subprocess.check_call(
+        [sys.executable, "-m", "pip", "install", "--no-deps", *metadata_conflicts]
     )
 
 

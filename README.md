@@ -28,9 +28,9 @@ mechanisms. It does not rerun the complete publication campaigns. Real-data acqu
 bounded fitting instructions remain in [INPUTS.md](INPUTS.md).
 
 The installer preserves every version in `environment/requirements.txt`. It installs
-`matbench==0.6` without dependency resolution because that package's historical metadata
-pins `matminer==0.7.4`, whereas the frozen, receipted environment uses
-`matminer==0.10.1`.
+`matbench==0.6` and `matminer==0.10.1` without dependency resolution because their
+historical metadata conflict with the frozen, receipted `matminer==0.10.1` and
+`pandas==3.0.2` versions. Their public runtime dependencies are installed separately.
 
 ## Routes
 
