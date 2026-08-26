@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
+*.npy binary
+*.npz binary
+
+# Preserve byte identities for frozen expected evidence, receipts and protocols.
+expected/** -text
+outputs/** -text
+protocols/** -text

@@ -11,6 +11,27 @@ The package excludes the production Systemica/Geatomica runtime, recovery
 controller, policy engine, private estate paths, credentials and commercial
 connectors.
 
+## Quick verification
+
+```bash
+git clone https://github.com/JosephMaxwell02/materials-ml-scientific-verification-rerunner.git
+cd materials-ml-scientific-verification-rerunner
+python tools/install_reference_environment.py
+python -m pip install pytest==8.4.2
+python tools/verify_manifest.py
+python -m pytest -q
+python run.py smoke
+```
+
+This path checks repository integrity, automated tests and deterministic scientific
+mechanisms. It does not rerun the complete publication campaigns. Real-data acquisition and
+bounded fitting instructions remain in [INPUTS.md](INPUTS.md).
+
+The installer preserves every version in `environment/requirements.txt`. It installs
+`matbench==0.6` and `matminer==0.10.1` without dependency resolution because their
+historical metadata conflict with the frozen, receipted `matminer==0.10.1` and
+`pandas==3.0.2` versions. Their public runtime dependencies are installed separately.
+
 ## Routes
 
 | Route | Publication relationship | Bounded computation |
